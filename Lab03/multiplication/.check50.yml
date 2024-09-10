@@ -4,3 +4,4 @@ check50:
     - !include "*.py"
     - !require multiplication.py
   style: false
+  checks: __init__.py

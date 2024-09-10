@@ -3,7 +3,7 @@ checks:
   - name: "multiplication"
     path: "multiplication.py"
     tests:
-      - file: "test_multiplication.py"
+      - file: "__init__.py"
   - name: "vowel"
     path: "vowel.py"
     tests:
