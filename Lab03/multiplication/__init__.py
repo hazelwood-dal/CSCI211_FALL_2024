@@ -12,6 +12,7 @@ def test_5x5():
     expected_output = "1 2 3 4 5 \n2 4 6 8 10 \n3 6 9 12 15 \n4 8 12 16 20 \n5 10 15 20 25 \n"
     # Normalize spaces between numbers and keep newlines intact
     normalized_expected = re.sub(r'[ \t]+', ' ', expected_output.strip())
+    normalized_expected = re.sub(r'  ', ' ', normalized_expected.strip())
     # Replace multiple spaces with a single space, but keep newlines as they are
     #normalized_expected = re.sub(r'\s{2,}', ' ', normalized_expected)
     check50.run("python3 multiplication.py").stdin("5").stdout(normalized_expected, regex=True).exit(0)
@@ -22,6 +23,7 @@ def test_3x3():
     expected_output = "1 2 3 \n2 4 6 \n3 6 9 \n"
     # Normalize spaces between numbers and keep newlines intact
     normalized_expected = re.sub(r'[ \t]+', ' ', expected_output.strip())
+    normalized_expected = re.sub(r'  ', ' ', normalized_expected.strip())
     # Replace multiple spaces with a single space, but keep newlines as they are
     #normalized_expected = re.sub(r'\s{2,}', ' ', normalized_expected)
     check50.run("python3 multiplication.py").stdin("3").stdout(normalized_expected, regex=True).exit(0)
