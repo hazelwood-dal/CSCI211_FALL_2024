@@ -1,0 +1,7 @@
+check50:
+  files:
+    - !exclude "*"
+    - !include "*.py"
+    - !require vowel.py
+  style: false
+  checks: __init__.py
