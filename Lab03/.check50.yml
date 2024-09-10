@@ -1,0 +1,10 @@
+version: 1.0
+checks:
+  - name: "multiplication"
+    path: "multiplication.py"
+    tests:
+      - file: "test_multiplication.py"
+  - name: "vowel"
+    path: "vowel.py"
+    tests:
+      - file: "test_vowel.py"
